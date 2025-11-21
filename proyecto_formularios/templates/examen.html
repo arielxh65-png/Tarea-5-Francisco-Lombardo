@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Examen Evaluativo</title>
+    <link rel="stylesheet" href="/proyecto_formularios/statics/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Examen Evaluativo</h1>
+
+        <img src="/proyecto_formularios/statics/images/examen.png" alt="Examen" class="imagen-form">
+
+        <form id="formExamen">
+            <label>1. ¿Cuál es el lenguaje de programación más usado?</label>
+            <div>
+                <label><input type="radio" name="pregunta1" value="Python" required> Python</label>
+                <label><input type="radio" name="pregunta1" value="Java"> Java</label>
+                <label><input type="radio" name="pregunta1" value="C++"> C++</label>
+                <label><input type="radio" name="pregunta1" value="Ruby"> Ruby</label>
+            </div>
+
+            <label>2. ¿El Hardware es la parte física del computador?</label>
+            <div>
+                <label><input type="radio" name="pregunta2" value="Verdadero" required> Verdadero</label>
+                <label><input type="radio" name="pregunta2" value="Falso"> Falso</label>
+            </div>
+
+            <label>3. ¿Qué es HTML? <span class="aclaracion">Respuesta corta</span></label>
+            <input type="text" name="pregunta3" required>
+
+            <label>4. ¿Qué significa CPU?</label>
+            <div>
+                <label><input type="radio" name="pregunta4" value="Central Process Unit" required> Central Process Unit</label>
+                <label><input type="radio" name="pregunta4" value="Central Program Unit"> Central Program Unit</label>
+                <label><input type="radio" name="pregunta4" value="Central Processing Unit"> Central Processing Unit</label>
+                <label><input type="radio" name="pregunta4" value="Computer Processing Unit"> Computer Processing Unit</label>
+            </div>
+
+            <label>5. ¿El sistema operativo es un software?</label>
+            <div>
+                <label><input type="radio" name="pregunta5" value="Verdadero" required> Verdadero</label>
+                <label><input type="radio" name="pregunta5" value="Falso"> Falso</label>
+            </div>
+
+            <div class="form-buttons">
+                <button type="button" class="btn" onclick="history.back()">ATRÁS</button>
+                <button type="button" class="btn" id="enviarExamen">ENVIAR</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="/proyecto_formularios/js/examen.js"></script>
+</body>
+</html>
